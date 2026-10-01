@@ -1,0 +1,27 @@
+{
+  "name": "aerosearch-mcp",
+  "version": "1.0.0",
+  "description": "Ultra-fast, self-contained, 2B/4B SLM-friendly Web Search & Crawling MCP Server",
+  "type": "module",
+  "bin": {
+    "aerosearch-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "@mozilla/readability": "^0.5.0",
+    "better-sqlite3": "^11.8.1",
+    "cheerio": "^1.0.0",
+    "linkedom": "^0.18.9"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.13.0",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.4"
+  }
+}
